@@ -1,0 +1,13 @@
+<div>
+    <h2>Employee Management Application</h2>
+    <button routerLink="/add-employee">Add Employee</button>
+  </div>
+  
+  <div>
+    <h3>Employee List</h3>
+    <ul>
+      <li *ngFor="let employee of employees">
+        {{ employee.firstName }} {{ employee.lastName }} - {{ employee.email }}
+      </li>
+    </ul>
+  </div>
